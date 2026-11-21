@@ -1,0 +1,98 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Database
+*.db
+*.sqlite3
+
+# Python generated files
+.pytest_cache/
+
+# Android
+.gradle/
+**/build/
+local.properties
+*.jks
+*.keystore
+
+# IDE
+.idea/
+.vscode/
+
+# Sensitive user data
+user_logs.csv
+
+
+# Python cache
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Backup folders
+backup_phase*/
+
+# User training data
+user_logs*.csv
+
+# Android generated files
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+**/build/
+
+# Debug screenshots and UI dumps
+*_dump.xml
+dialog_dump.xml
+fb.xml
+live.xml
+now2.xml
+fixed_dump.xml
+gen_dump.xml
+menu_hist.xml
+retrain_dump.xml
+
+# IDE and environment
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# Local databases and user logs
+*.db
+*.sqlite3
+user_logs*.csv
+
+# Root-level debugging XML files
+/*.xml
+
+# Temporary development screenshots
+/screen_*.png
+/add_task_dialog.png
+/current_screen.png
+/emulator_screen.png
+/menu_screen.png
+/timepicker_*.png
+
+# Old experimental copies - review before publishing
+/database-KIIT2786.py
+/logger-KIIT2786.py
+/main-KIIT2786.py
+/models-KIIT2786.py
+/scheduler-KIIT2786.py
+/schemas-KIIT2786.py
+/index-KIIT2786.html
+/script-KIIT2786.js
+/style-KIIT2786.css

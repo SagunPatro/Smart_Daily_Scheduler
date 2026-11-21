@@ -1,0 +1,157 @@
+/* Base */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #FFF9FB;
+    padding: 40px 20px;
+    margin: 0;
+    color: #333333;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #333333;
+}
+
+/* Main Card */
+.container {
+    background: white;
+    padding: 30px;
+    margin: auto;
+    max-width: 650px;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+/* Inputs */
+input, select {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 14px;
+    border-radius: 16px;
+    border: 1px solid #eee;
+    font-size: 14px;
+    transition: 0.2s ease;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: 1px solid #CDB4DB;
+    box-shadow: 0 0 0 3px rgba(205,180,219,0.2);
+}
+
+.time-range {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.time-range > div {
+    flex: 1;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 14px;
+    border-radius: 24px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+    background: #CDB4DB;
+    color: white;
+    box-shadow: 0 8px 20px rgba(205,180,219,0.3);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: #bda2cc;
+}
+
+/* Task Row Layout */
+.task-row {
+    background: #fafafa;
+    border: 1px solid #f0f0f0;
+    border-radius: 16px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.task-inputs {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.fixed-options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.fixed-toggle-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Hidden */
+.hidden {
+    display: none !important;
+}
+
+/* Output Box & Schedule Card */
+.schedule-output {
+    margin-top: 20px;
+}
+
+.schedule-card {
+    background: #faf5ff;
+    border-left: 4px solid #CDB4DB;
+    padding: 12px 16px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.schedule-card.task { border-left-color: #A2D2FF; background: #f0f7ff; }
+.schedule-card.fixed_task { border-left-color: #FFC8DD; background: #fff0f5; }
+.schedule-card.meal { border-left-color: #CDEAC0; background: #f2faf0; }
+.schedule-card.break { border-left-color: #e2e8f0; background: #f8fafc; color: #64748b; }
+.schedule-card.free { border-left-color: #cbd5e1; background: #f8fafc; font-style: italic; color: #94a3b8; }
+
+.warnings-box {
+    background: #fff3cd;
+    color: #856404;
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Feedback Section */
+.feedback-box {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #F3E8FF;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.feedback-card {
+    background: white;
+    border-radius: 16px;
+    padding: 14px;
+    margin-bottom: 12px;
+}

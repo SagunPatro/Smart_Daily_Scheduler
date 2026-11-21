@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Daily Scheduler</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- LANDING PAGE -->
+  <div id="landingPage">
+    <h1>✨ Smart Daily Scheduler</h1>
+    <p style="text-align:center; font-size:18px;">
+      Plan smarter. Stress less.
+    </p>
+    <button onclick="showAuth()">💖 Create My Schedule</button>
+  </div>
+
+  <!-- AUTH SECTION -->
+  <div id="authSection" class="hidden">
+    <h3>🔐 Signup</h3>
+    <input id="suUsername" placeholder="Username" />
+    <input id="suEmail" placeholder="Email" />
+    <input id="suPassword" type="password" placeholder="Password" />
+    <button onclick="signup()">Signup</button>
+
+    <h3>🔑 Login</h3>
+    <input id="liUsername" placeholder="Username" />
+    <input id="liPassword" type="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+
+    <p id="authStatus" style="text-align:center; font-weight:bold;"></p>
+  </div>
+
+  <!-- SCHEDULER SECTION -->
+  <div id="schedulerSection" class="hidden">
+    <div style="overflow: hidden; margin-bottom: 10px;">
+      <button onclick="logout()" style="background:#ff6b6b; width:auto; padding:8px 16px; font-size:12px; float:right; margin:0;">Logout</button>
+      <h2 style="margin:0; text-align:left; float:left;">📅 Smart Daily Scheduler</h2>
+    </div>
+
+    <div class="time-range">
+      <div>
+        <label>Day Start Time</label>
+        <input id="dayStart" type="time" value="09:00" />
+      </div>
+
+      <div>
+        <label>Day End Time</label>
+        <input id="dayEnd" type="time" value="23:00" />
+      </div>
+    </div>
+
+    <h3>Tasks</h3>
+    <div id="tasks"></div>
+
+    <button onclick="addTask()">➕ Add Task</button>
+    <br>
+
+    <button onclick="generateSchedule()">⚡ Generate Schedule</button>
+
+    <div id="warnings" class="warnings-box hidden"></div>
+    <div id="output" class="schedule-output"></div>
+
+    <div class="feedback-box">
+      <h3>📝 Task Feedback</h3>
+      <div id="feedbackContainer">
+        <p style="color: #666; font-style: italic;">Generate a schedule to provide feedback on your tasks.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function showAuth() {
+  document.getElementById("landingPage").classList.add("hidden");
+  document.getElementById("authSection").classList.remove("hidden");
+}
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>
